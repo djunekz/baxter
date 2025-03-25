@@ -2,7 +2,7 @@
 <h4 align="center">-=[ Tools Encrypt and Decrypt ]=-</h4>
 <p align="center">
 	<img src="https://img.shields.io/static/v1?style=for-the-badge&logo=appveyor&label=AUTHOR&message=DJUNEKZ&color=green")<br>
-	<img src="https://img.shields.io/static/v1?label=Version&message=1.0.2&color=green")
+	<img src="https://img.shields.io/static/v1?label=Version&message=1.0.2&color=green")<br>
 
 # BaxTER Tools
 
