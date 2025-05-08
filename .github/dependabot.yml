@@ -1,0 +1,6 @@
+python-gitlab:
+  type: python-index
+  url: gitlab.com/api/v4/projects/:project_id/packages/pypi/simple
+  username: :token_name
+  password: ${{GITLAB_PYPI_TOKEN}}
+  replaces-base: false
