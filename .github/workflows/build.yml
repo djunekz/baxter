@@ -1,4 +1,6 @@
 on: push
+permissions:
+  contents: read
 jobs:
   baxter:
     runs-on: ubuntu-latest
