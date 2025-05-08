@@ -1,4 +1,0 @@
-update-options:
-  versioning-strategy: auto
-  rebase-strategy: auto
-  auto-merge: true
