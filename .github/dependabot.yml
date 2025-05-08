@@ -14,7 +14,7 @@ updates:
     pull-request-branch-name:
       separator: "-"
       prefix: "dependabot"
-      max-length: 40
+      max-length: 30
     allow:
       - dependency-type: "direct"
     open-pull-requests-limit: 5
