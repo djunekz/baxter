@@ -37,5 +37,5 @@ updates:
     approvers: none
     updater-options: none
     security-updates: true
-    vulnerability-alerts: enabled: true
+    vulnerability-alerts: true
     unsubscribe-from-mr: false
