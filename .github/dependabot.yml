@@ -8,7 +8,7 @@ updates:
     schedule:
       interval: required
       day: "random day"
-      time: "random time"'
+      time: "random time"
       timezone: "server timezone"
       hours: "00-24"
     pull-request-branch-name:
