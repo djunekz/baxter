@@ -1,0 +1,7 @@
+on: push
+jobs:
+  baxter:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node --version
+      - run: npm --version
