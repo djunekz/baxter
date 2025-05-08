@@ -1,41 +1,41 @@
 version: 2
-registries: 'default: none'
-fork: 'default: false'
-update-options: 'default: none'
+registries: none
+fork: false
+update-options: none
 updates:
-  - package-ecosystem: 'required'
-    directory: 'required'
+  - package-ecosystem: required
+    directory: required
     schedule:
-      interval: 'required'
-      day: 'default: "random day"' # for weekly updates
-      time: 'default: "random time"'
-      timezone: 'default: "server timezone"'
-      hours: 'default: "00-24"' # for random time
+      interval: required
+      day: "random day"
+      time: "random time"'
+      timezone: "server timezone"
+      hours: "00-24"
     pull-request-branch-name:
-      separator: 'default: "-"'
-      prefix: 'default: "dependabot"'
+      separator: "-"
+      prefix: "dependabot"
       max-length: 40
     allow:
-      - dependency-type: 'default: "direct"'
-    open-pull-requests-limit: 'default: 5'
-    open-security-pull-requests-limit: 'default: 10'
-    versioning-strategy: 'default: "auto"'
-    rebase-strategy: 'default: "auto"'
-    auto-merge: 'default: false'
-    auto-approve: 'default: false'
-    fork: 'default: false'
-    vendor: 'default: false'
-    insecure-external-code-execution: 'default: false'
-    registries: 'default: "*"'
-    labels: 'default: none'
-    commit-message: 'default: none'
-    author-details: 'default: none'
-    milestone: 'default: none'
-    ignore: 'default: none'
-    assignees: 'default: none'
-    reviewers: 'default: none'
-    approvers: 'default: none'
-    updater-options: 'default: none'
-    security-updates: 'default: true'
-    vulnerability-alerts: 'default: enabled: true, confidential: true'
-    unsubscribe-from-mr: 'default: false'
+      - dependency-type: "direct"
+    open-pull-requests-limit: 5
+    open-security-pull-requests-limit: 10
+    versioning-strategy: auto
+    rebase-strategy: auto
+    auto-merge: false
+    auto-approve: false
+    fork: false
+    vendor: false
+    insecure-external-code-execution: false
+    registries: "*"
+    labels: none
+    commit-message: none
+    author-details: none
+    milestone: none
+    ignore: none
+    assignees: none
+    reviewers: none
+    approvers: none
+    updater-options: none
+    security-updates: true
+    vulnerability-alerts: enabled: true, confidential: true
+    unsubscribe-from-mr: false
