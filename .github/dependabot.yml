@@ -1,41 +1,4 @@
-version: 2
-registries: none
-fork: false
-update-options: none
-updates:
-  - package-ecosystem: required
-    directory: required
-    schedule:
-      interval: required
-      day: "random day"
-      time: "random time"
-      timezone: "server timezone"
-      hours: "00-24"
-    pull-request-branch-name:
-      separator: "-"
-      prefix: "dependabot"
-      max-length: 30
-    allow:
-      - dependency-type: "direct"
-    open-pull-requests-limit: 5
-    open-security-pull-requests-limit: 10
-    versioning-strategy: auto
-    rebase-strategy: auto
-    auto-merge: false
-    auto-approve: false
-    fork: false
-    vendor: false
-    insecure-external-code-execution: false
-    registries: "*"
-    labels: none
-    commit-message: none
-    author-details: none
-    milestone: none
-    ignore: none
-    assignees: none
-    reviewers: none
-    approvers: none
-    updater-options: none
-    security-updates: true
-    vulnerability-alerts: true
-    unsubscribe-from-mr: false
+update-options:
+  versioning-strategy: auto
+  rebase-strategy: auto
+  auto-merge: true
