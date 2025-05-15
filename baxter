@@ -26,7 +26,7 @@ note= """ {}# NOTE{}""".format(R,W)
 recode = """{}Jika ingin recode, jangan lupa cantumkan nama Author di tools kalian.
 semudah itu untuk bersedekah.
 """.format(Y)
-version="""{}1.2.0{}""".format(G,N)
+version="""{}1.2.4{}""".format(G,N)
 os.system("clear")
 logo ="""
 
@@ -37,7 +37,6 @@ logo ="""
 \t\33[1;37m    |____/ \__,_/\33[1;33m_/\_\ \33[1;37m|_| |_____|_| \_\ \33[0m
 
    \t\t \33[1;34m Author\33[1;36m :\33[1;33m D J U N E K Z
-   \t\t \33[1;34m Version\33[1;36m: {}
 """.format(version)
 print logo
 inf = """
