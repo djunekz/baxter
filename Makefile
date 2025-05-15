@@ -4,7 +4,7 @@ all:
 	@echo Run \'make install\' to install baxter
 
 install:
-	@cp -p baxter $(DESTDIR)$(PREFIX)/bin/baxter
+	@cp -p baxter $(DESTDIR)$(PREFIX)/bin
 	@chmod 755 $(DESTDIR)$(PREFIX)/bin/baxter
 
 uninstall:
