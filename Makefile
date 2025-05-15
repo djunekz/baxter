@@ -1,11 +1,15 @@
-PREFIX = /usr
+PREFIX = ../usr/bin
 
 all:
 	@echo Run \'make install\' to install baxter
 
-install:
-	@cp -p baxter $(DESTDIR)$(PREFIX)/bin
-	@chmod 755 $(DESTDIR)$(PREFIX)/bin/baxter
+termux:
+	@chmod 755 baxter
+	@cp baxter $(HOME)/$(PREFIX)
+
+linux:
+	@chmod 755 baxter
+	@cp baxter $(HOME)/../$(PREFIX)
 
 uninstall:
 	@rm -rf $(DESTDIR)$(PREFIX)/bin/baxter
