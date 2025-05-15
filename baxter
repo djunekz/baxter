@@ -26,7 +26,7 @@ note= """ {}# NOTE{}""".format(R,W)
 recode = """{}Jika ingin recode, jangan lupa cantumkan nama Author di tools kalian.
 semudah itu untuk bersedekah.
 """.format(Y)
-version="""{}1.2.4{}""".format(G,N)
+version="""{}1.2.2{}""".format(G,N)
 os.system("clear")
 logo ="""
 
