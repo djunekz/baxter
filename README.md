@@ -18,7 +18,15 @@ Author by Djunekz, jika ingin recode script ini usahakan cantumkan nama author d
 pkg install git
 git clone https://github.com/djunekz/baxter
 cd baxter
-bash install
+make install
+```
+or one command
+```
+git clone https:/github.com/djunekz/baxter && cd baxter && make install
+```
+Run
+```
+baxter
 ```
 
 # How to use BaxTER

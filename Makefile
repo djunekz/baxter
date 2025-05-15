@@ -6,6 +6,7 @@ all:
 install:
 	@chmod 755 baxter
 	@cp baxter $(HOME)/$(PREFIX)
+	@cd .. && rm -rf baxter
 
 uninstall:
 	@rm -rf $(DESTDIR)$(PREFIX)/bin/baxter
