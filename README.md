@@ -18,11 +18,11 @@ Author by Djunekz, jika ingin recode script ini usahakan cantumkan nama author d
 pkg install git
 git clone https://github.com/djunekz/baxter
 cd baxter
-make install
+bash install
 ```
 or one command
 ```
-git clone https:/github.com/djunekz/baxter && cd baxter && make install
+git clone https:/github.com/djunekz/baxter && cd baxter && bash install
 ```
 Run
 ```

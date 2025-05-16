@@ -1,0 +1,311 @@
+#!/usr/bin/env bash
+# Tool name : Installer BaxTER
+# Information : Simple Encrypt and Decrypt files
+# author : djunekz
+# script note : free design jika ingin recode or copy script
+# Jangan lupa cantumkan sumber/author name
+
+LESS=+'/Within \[ and \],'
+
+# Set color variable
+black='\e[0;30m'
+red='\e[0;31m'
+green='\e[0;32m'
+yellow='\e[0;33m'
+bg_y='\e[43m'
+blue='\e[0;34m'
+magenta='\e[0;35m'
+cyan='\e[0;36m'
+lgray='\e[0;37m'
+gray='\e[0;90m'
+lred='\e[0;91m'
+lgreen='\e[0;92m'
+lyellow='\e[0;93m'
+lblue='\e[0;94m'
+lmagenta='\e[0;95m'
+lcyan='\e[0;96m'
+white='\e[0;97m'
+bg_w='\e[107m'
+CL='\e[0m'
+function logo(){
+printf "\t${lyellow}  ___ ${lred}INSTALLER${lyellow} _____ ___ ___ \n"
+printf "\t${lyellow} | _ ) __ ___ _|_   _| __| _ \ \n"
+printf "\t${lyellow} | _ \/ _+ \ \ / | | | _||   / \n"
+printf "\t${lyellow} |___/\__+_/_\_\ |_| |___|_|_\ ${CL} \n"
+printf "\n"
+printf "\t${lcyan} E N C R Y P T ${white}and ${lcyan}D E C R Y P T${CL} \n"
+printf "\t${white} Author : ${lgreen}D J U N E K Z \n"
+printf "\t${white} Email : ${lgreen}gab288.gab288@passinbox.com${CL} \n"
+printf "\n"
+}
+function logo1(){
+printf "\t${lyellow}  ___  ${lred}TERMUX${lyellow}   _____ ___ ___ \n"
+printf "\t${lyellow} | _ ) __ ___ _|_   _| __| _ \ \n"
+printf "\t${lyellow} | _ \/ _+ \ \ / | | | _||   / \n"
+printf "\t${lyellow} |___/\__+_/_\_\ |_| |___|_|_\ ${CL} \n"
+printf "\n"
+printf "\t${lcyan} E N C R Y P T ${white}and ${lcyan}D E C R Y P T${CL} \n"
+printf "\t${white} Author : ${lgreen}D J U N E K Z \n"
+printf "\t${white} Email : ${lgreen}gab288.gab288@passinbox.com${CL} \n"
+printf "\n"
+}
+function logo2(){
+printf "\t${lyellow}  ___   ${lred}LINUX${lyellow}   _____ ___ ___ \n"
+printf "\t${lyellow} | _ ) __ ___ _|_   _| __| _ \ \n"
+printf "\t${lyellow} | _ \/ _+ \ \ / | | | _||   / \n"
+printf "\t${lyellow} |___/\__+_/_\_\ |_| |___|_|_\ ${CL} \n"
+printf "\n"
+printf "\t${lcyan} E N C R Y P T ${white}and ${lcyan}D E C R Y P T${CL} \n"
+printf "\t${white} Author : ${lgreen}D J U N E K Z \n"
+printf "\t${white} Email : ${lgreen}gab288.gab288@passinbox.com${CL} \n"
+printf "\n"
+}
+clear
+logo
+termux(){
+clear
+echo
+logo1
+echo
+printf "${white}[${lyellow}!${white}]${green} Update and Upgrade system"
+for i in {1..5}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf "....\n${CL}"
+if [ -d /data/data/com.termux/files/usr/bin ]; then
+ # if [ ! -e /data/data/com.termux/files/usr/bin/ ];then
+    pkg update
+    pkg upgrade -y
+sleep 3
+    pkg install python python2 -y
+sleep 3
+    pkg install nodejs -y
+sleep 3
+    pkg install ruby -y
+    npm -g install bash-obfuscate
+    pkg install git
+    pkg install wget
+    pkg install tar
+ # fi
+fi
+echo -e ${white}[${lyellow}!${white}]${green} Update and Upgrade system successful${yellow}!${CL}
+sleep 3
+clear
+echo
+logo1
+echo
+printf "${white}[${lyellow}!${white}]${green} Waiting for installing packages"
+for i in {1..5}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf "....\n"
+clear
+for i in $(seq 1 100)
+ do
+    sleep 0.1
+
+    if [ $i -eq 100 ]; then
+       echo -e "XXX\n100\nSuccessful!\nXXX"
+    else
+       echo $i
+    fi
+done | dialog --title 'Installing Packages' --gauge 'Processing' 6 60 0
+sleep 4
+clear
+echo
+logo1
+echo
+printf "${white}[${lyellow}!${white}]${green} Repacking"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+wget --quiet https://github.com/djunekz/baxter/releases/download/v1.0.0/baxter.tar.gz
+tar -xf baxter.tar.gz
+rm baxter.tar.gz
+mv baxter /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/baxter
+printf "${white}[${lyellow}!${white}]${green} Checking"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+printf "${white}[${lyellow}!${white}]${green} Reading packages lists"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+printf "${white}[${lyellow}!${white}]${green} Reading state Information"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+cd ..
+rm -rf baxter
+printf "${white}[${lyellow}!${white}]${green} Building dependency tree"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+printf "${white}[${lyellow}!${white}]${green} Building packages"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+echo -e ${white}[${lyellow}!${white}]${green} Installing successfull${yellow}!!${CL}
+echo -e ${white}[${lyellow}?${white}]${green} Using execute${yellow}: ${red}${bg_w} baxter  ${CL}
+sleep 3
+exit 1
+}
+linux(){
+clear
+echo
+logo2
+printf "${white}[${lyellow}!${white}]${green} Install packages system"
+for i in {1..5}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+    printf "\b\b\b\b    \b\b\b\b"
+done
+printf "....\n${CL}"
+sudo apt install nodejs
+sudo apt install npm
+sudo npm install -g bash-obfuscate
+clear
+echo
+logo1
+echo
+printf "${white}[${lyellow}!${white}]${green} Waiting for installing packages"
+for i in {1..5}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf "....\n"
+clear
+echo
+logo1
+echo
+printf "${white}[${lyellow}!${white}]${green} Repacking"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+wget --quiet https://github.com/djunekz/baxter/releases/latest/download/baxter.tar.gz
+tar -xf baxter.tar.gz
+sudo rm baxter.tar.gz
+sudo mv baxter $HOME/../../usr/bin
+sudo chmod +x $HOME/../../usr/bin/baxter
+printf "${white}[${lyellow}!${white}]${green} Checking"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+printf "${white}[${lyellow}!${white}]${green} Reading packages lists"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+printf "${white}[${lyellow}!${white}]${green} Reading state Information"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+cd ..
+sudo rm -rf baxter
+printf "${white}[${lyellow}!${white}]${green} Building dependency tree"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+printf "${white}[${lyellow}!${white}]${green} Building packages"
+for i in {1..3}; do
+  for j in {1..4}; do
+    printf "."
+    sleep 0.5
+  done
+  printf "\b\b\b\b    \b\b\b\b"
+done
+printf ".... done\n"
+echo -e ${white}[${lyellow}!${white}]${green} Installing successfull${yellow}!!${CL}
+echo -e ${white}[${lyellow}?${white}]${green} Using execute${yellow}: ${red}${bg_w} baxter  ${CL}
+sleep 3
+exit 1
+}
+
+menu(){
+echo
+echo -e ${lyellow}" Select OS for Installing"${cyan}":"
+echo
+echo -e ${lgreen}"["${yellow}"1"${lgreen}"]" ${white}" Termux"
+echo -e ${lgreen}"["${yellow}"2"${lgreen}"]" ${white}" Linux"
+echo ""
+echo -ne ${white}" Select" ${lgreen}" > "
+read opt
+if [ $opt = "1" ];
+then
+termux
+elif [ $opt = "2" ];
+then
+linux
+else
+echo -e ${lred}" Wrong input! please try again type" ${lyellow}"Bash Install"
+fi
+}
+menu
