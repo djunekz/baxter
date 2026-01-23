@@ -2,8 +2,13 @@
 <h4 align="center">[ Tools Encrypt and Decrypt ]</h4>
 <p align="center">
 <a href="https://github.com/djunekz"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=github&label=AUTHOR&message=DJUNEKZ&color=blue")</a>
-<a href="https://github.com/djunekz/baxter/tree/v1.0.0"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Clockify&logoColor=white&label=Version&message=1.0.0&color=green")</a><br>
-<a href="https://github.com/djunekz/baxter/releases"><img alt="Latest Release" src="https://img.shields.io/github/release/djunekz/baxter.svg" /></a><br>
+<a href="https://github.com/djunekz/baxter/releases/latest">
+  <img src="https://img.shields.io/github/v/release/djunekz/baxter?style=for-the-badge&logo=Clockify&logoColor=white&color=green" />
+</a><br>
+<a href="https://github.com/djunekz/baxter/releases/latest">
+  <img src="https://img.shields.io/github/downloads/djunekz/baxter/total?style=for-the-badge&logo=gnubash" />
+</a><br>
+	<img src="https://img.shields.io/static/v1?label=Linux&logo=linux&logoColor=green&color=green&message=Support&style=flat">
 <img src="https://img.shields.io/static/v1?label=Android&logo=android&logoColor=green&color=green&message=Support&style=flat">
 		
 # BaxTER Tools
